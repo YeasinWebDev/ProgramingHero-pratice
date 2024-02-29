@@ -1,0 +1,49 @@
+<!DOCTYPE html theme="light">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Universe Hub</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+</head>
+<style>
+    * {
+        font-family: sans-serif;
+    }
+</style>
+
+<body class="bg-white">
+    <header class="w-full flex flex-col  items-center text-black">
+        <h1 class="text-4xl font-bold">Al Universe Hub</h1>
+        <button id="sortby"
+            class="border-[1px] border-orange-900 px-3 py-2 mt-4 rounded-lg bg-orange-500 text-white cursor-pointer hover:scale-[1.1] transition-all my-4" onclick="start()">Sort
+            By Data</button>
+    </header>
+
+    <main>
+        <div class="container w-full m-auto text-black grid grid-cols-4 gap-10">
+        </div>
+
+        <!-- popUp section -->
+        <section id="popup" class=" fixed top-[25%] bg-[#d9d9d9] w-[130vh] h-[60vh] left-[23%]  z-10 rounded-lg hidden">
+            <button id="cross"
+                class=" btn border-none px-5 text-xl hover:bg-orange-700 rounded-full bg-orange-700 text-white absolute top-[-12] right-[-10]"
+                onclick="closePopUp()">x</button>
+
+            <div id="cont" class=" px-[50px] py-[50px] flex justify-between">
+               
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="flex flex-col  items-center ">
+        <button class="btn bg-orange-600 text-white border-none hover:bg-orange-800 ">See More</button>
+    </footer>
+</body>
+
+</html>
